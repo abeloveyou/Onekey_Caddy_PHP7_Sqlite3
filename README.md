@@ -87,7 +87,31 @@ bash c.sh -unv
 卸载 rinetdbbr
 bash c.sh -unb
 ```
-
+- 安装好后，有些程序还需要设置下伪静态。
+- 伪静态设置
+- 提示：这里暂时只说Typecho和Wordpress，如果你发现其它程序也会出现404，可以反馈下。
+- Caddy配置文件路径/etc/dylanbai8/caddy/Caddyfile
+- 编辑配置文件：
+```
+vi /etc/dylanbai8/caddy/Caddyfile
+```
+- 在最后一个}上面添加以下代码：
+```
+#Wordpress伪静态
+rewrite {
+if {path} not_match ^\/wp-admin
+to {path} {path}/ /index.php?{query}
+}
+#Typecho伪静态
+rewrite {
+if {path} not_match ^\/admin
+to {path} {path}/ /index.php?{query}
+}
+```
+- 然后重启Caddy：
+```
+systemctl restart caddy
+```
 ## 相关命令/目录
 ```
 启动：
