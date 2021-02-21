@@ -1,4 +1,4 @@
-##VPS 256MB 测试两种方案
+## VPS 256MB 测试两种方案
 1. https://github.com/abeloveyou/Onekey_Caddy_PHP7_Sqlite3
 2. https://lowendbox.com/blog/wordpress-cheap-vps-lowendscript/
 
