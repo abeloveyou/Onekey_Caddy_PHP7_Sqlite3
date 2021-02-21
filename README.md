@@ -133,3 +133,4 @@ tail -f /tmp/caddy.log
 - Caddy安装目录：/usr/local/caddy
 - Caddy配置文件位置：/usr/local/caddy/Caddyfile
 - 网站目录：/www
+- 后台网址：/admin/
