@@ -105,7 +105,6 @@ bash c.sh -unb
 查看Caddy启动日志：
 tail -f /tmp/caddy.log
 ```
-Caddy安装目录：/usr/local/caddy
-Caddy配置文件位置：/usr/local/caddy/Caddyfile
-
-网站目录：/www
+- Caddy安装目录：/usr/local/caddy
+- Caddy配置文件位置：/usr/local/caddy/Caddyfile
+- 网站目录：/www
