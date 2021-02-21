@@ -89,13 +89,22 @@ bash c.sh -unb
 ```
 
 ## 相关命令/目录
-启动：/etc/init.d/caddy start
-停止：/etc/init.d/caddy stop
-重启：/etc/init.d/caddy restart
+```
+启动：
+/etc/init.d/caddy start
 
-查看状态：/etc/init.d/caddy status
-查看Caddy启动日志：tail -f /tmp/caddy.log
+停止：
+/etc/init.d/caddy stop
 
+重启：
+/etc/init.d/caddy restart
+
+查看状态：
+/etc/init.d/caddy status
+
+查看Caddy启动日志：
+tail -f /tmp/caddy.log
+```
 Caddy安装目录：/usr/local/caddy
 Caddy配置文件位置：/usr/local/caddy/Caddyfile
 
